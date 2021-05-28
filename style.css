@@ -1,0 +1,465 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    line-height: 1.4;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(243, 238, 228);
+    font-size: 1rem;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    background: rgb(49, 49, 49);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    margin-right: .4rem;
+}
+#form-body{
+    border: 1px solid lightgray;
+    background: none;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+#form-body input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: .4rem 1rem;
+    color: white;
+   
+}
+
+#form-body span{
+    color: white;
+    border: 1px solid lightgray;
+    padding: .1rem .3rem;
+    margin-right: .3rem;
+    font-size: 12px;
+}
+input:focus{
+    outline: none;
+    background: none;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 .4rem;
+}
+.fa-bell{
+    margin-right: .9rem;
+    margin-left: 0px;
+}
+.plus-icon{
+    margin-right: .9rem;
+}
+.fa-sort-down{
+    margin-left: .3rem;
+}
+.fa-circle{
+    color: red;
+}
+.fa-bars{
+    font-size: 15px;
+    color: white;
+}
+.star-icon{
+    color: rgb(68, 66, 66);
+    font-size: 15px;
+}
+.dropdown{
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+
+}
+.link-icon{
+    color: white;
+}
+#icon-logo{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* header responsive */
+@media all and (max-width: 1024px){
+    .header{
+        padding: .5rem .6rem;
+    }
+    .nav img{
+        width: 30px;
+        height: 30px;  
+        margin-right: 0rem;
+    }
+    #form-body{
+        margin-right: .3rem;
+        margin-left: .2rem;
+    }
+    .links{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 .3rem;
+    }
+}
+@media all and (max-width:767px){
+    #form-body{
+        display: none;
+    }
+    .link-container{
+        display: none;
+    }
+    .plus-icon{
+        display: none;
+    }
+    .header-logo{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .nav img{
+        width: 30px;
+        height: 30px;
+       
+        margin-right: 0rem;
+    }
+
+}
+/* for d sidebar */
+.sidebar{
+    height: 0;
+    display: none;
+}
+
+.show-sidebar{
+    height: auto;
+    padding: .8rem 1rem;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+}
+@media all and (min-width:767px){
+    .show-sidebar{
+     display: none;
+    }
+ }
+#side-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+.side-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#form-sidebar{
+    color: white;
+    border: 1px solid lightgray;
+    padding: .1rem .3rem;
+    margin-right: .3rem;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#form-sidebar input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: .4rem 1rem;
+    color: white;
+    width: 80%;
+   
+}
+#form-sidebar span{
+    color: white;
+    border: 1px solid lightgray;
+    padding: .1rem .3rem;
+    margin-right: .3rem;
+    font-size: 12px;
+}
+.link-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links-side{
+    width: 100%;
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: .4rem 0rem; 
+    border-bottom: 1px solid lightgray; 
+}
+
+/* mobile second sectio */
+.aside-mobile{ 
+    display: none;
+}
+#user-mobile-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: .8rem;
+}
+.user-mobile-description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.user-mobile-description h2{
+    color: rgb(32, 32, 32);
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.user-mobile-description h4{
+    font-size: 12px;
+    color: rgb(65, 62, 62);
+    margin-top: 0rem;
+}
+.user-mobile-description p{
+    color: rgb(37, 36, 36);
+    margin-top: -.9rem;
+    font-size: 10px;
+}
+@media all and (max-width: 767px){
+   .aside-mobile{
+       /* margin-top: -10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   }
+}
+
+/* for the second section after header */
+.hero{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    /* padding-bottom: .9rem; */
+    
+}
+.flexing{
+    display: flex;
+    align-items: center;
+}
+.flexing i{
+    margin-right: .2rem;
+}
+.hero-main{
+   display: flex;
+   align-items: center;
+    
+}
+.hero-main a{
+    padding-bottom: 1rem;
+    color: rgb(66, 65, 65);
+    font-size: 19px;
+    font-weight: 400;
+    margin-left: .7rem;
+    margin-right: .7rem;
+    text-decoration: none;
+}
+
+.hero-main a:hover{
+    color: black;
+    border-bottom: 2px solid rgb(155, 153, 153);
+}
+.hero-main a.active{
+    border-bottom: 2px solid red;
+}
+/* hero section responsive */
+@media all and (max-width: 767px){
+    .hero{
+        overflow-x: scroll;
+    }
+    .hero a{
+        font-size: 12px;
+    }
+}
+
+
+.main{
+    margin : 1rem 2rem;
+    display: grid;
+    grid-template-areas: 'aside main main main';
+}
+.aside{
+    grid-area: aside;
+    position: relative;
+    margin-left: 2rem;
+}
+.display-repo{
+    grid-area: main;
+}
+.aside-inner{
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+}
+#userImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+}
+/* aside responsive */
+@media all and (max-width: 1024px){
+    .main{
+        margin : 1rem 1rem;
+        display: grid;
+        grid-template-areas: 'aside aside main main main';
+    }
+    .aside-inner{
+        position: absolute;
+        top: -2rem;
+        right: .5rem;
+    }
+    #userImage{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+       
+    }
+}
+
+
+.description{
+    margin-top: 0;
+}
+.description h2{
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.description h4{
+    font-size: 14px;
+    color: rgb(65, 62, 62);
+    margin-top: 0rem;
+}
+.description p{
+    max-width: 200px;
+    color: rgb(37, 36, 36);
+    margin-top: -.9rem;
+}
+.repo-count{
+    background: rgb(170, 168, 168);
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+}
+.repo-form{
+    border: 1px solid lightgray;
+    background: none;
+    width: 100%;
+    border-radius: 5px;
+}
+.repo-form input{
+    background: none;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    color: white;
+   
+}
+.form-container{
+    padding-bottom: 1rem;
+}
+.border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+.display-repo{
+    margin-top: .8rem;
+}
+.display-repo h4{
+    color: rgb(71, 70, 70);
+    font-size: 13px;
+    
+}
+.bold{
+    color: rgb(26, 25, 25);
+    font-weight: bold;
+}
+.repo-ranking{
+    margin-top: .5rem;
+   
+}
+.repo-description{
+    padding-bottom: 1rem;
+}
+.repo-description-rating a{
+    color: rgb(44, 96, 192);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.repo-java{
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+#ranking-icon{
+    color: rgb(53, 52, 52);
+    font-size: 12px;
+    margin: 0 .5rem;
+    font-weight: 300;
+}
+.border-span{
+    border: 1px solid lightgray;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+}
+@media all and (max-width: 767px){
+    .main{
+        margin : 1rem 1rem;
+        display: grid;
+        grid-template-areas: ' main';
+    }
+    .aside{
+        display: none;
+    }
+    .border-span{
+        padding: .1rem;
+    }
+    .fa-star{
+        font-size: 12px;
+    }
+}

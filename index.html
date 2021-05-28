@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>GithubUsers</title>
+</head>
+<body>
+   <header >
+       <div class="header">
+     <button class="dropdown">
+        <i class="fa fa-bars"></i>
+     </button>
+       <div class="nav">
+        <img src="github.jpg" alt="">
+        <!-- <i class="fa fa-github" ></i> -->
+        <form  id="form-body" class="form">
+            <input id="input-user" type="text" placeholder="Search or jump to...">
+            <span>/</span>
+        </form>
+        <div class="flexbox link-container">
+            <a class="links" href="#">pull requests</a>
+            <a class="links" href="#">issues</a>
+            <a class="links" href="#">market place</a>
+            <a class="links" href="#">explore</a>
+ 
+        </div>
+       </div>
+       <div class="buttons flexbox">
+       <i class="fa fa-bell link-icon"></i>
+          <div class="flexbox plus-icon">
+            <i class="fa fa-plus link-icon"></i>
+            <i class="fa fa-sort-down link-icon"></i>
+          </div>
+         <div class="flexbox header-logo">
+            <img class=" user-image" id="icon-logo" src="" alt="">
+            <i class="fa fa-sort-down link-icon"></i>
+         </div>
+       </div>
+    </div>
+   
+   </header> 
+    <!-- sidebar div starts here -->
+    <div class="sidebar">
+        <form  id="form-sidebar" class="form">
+            <input id="input-user" type="text" placeholder="Search or jump to...">
+            <span>/</span>
+        </form>
+        <div class="link-sidebar">
+            <a class="links-side" href="#">pull requests</a>
+            <a class="links-side" href="#">issues</a>
+            <a class="links-side" href="#">market place</a>
+            <a class="links-side" href="#">explore</a>
+            <a class="links-side" href="#">Code space</a>
+            <a class="links-side" href="#">Sponsor</a>
+            <a class="links-side" href="#">Setting</a>
+            <a class="links-side side-flex" href="#">
+                <img id="side-img" class="user-image" src="" alt="">
+                <span class="description-name"></span>
+            </a>
+ 
+        </div>
+    </div>
+     <!-- siebar ends here -->
+    <!-- mobile view display uabout user starts here -->
+    <aside class="aside-mobile">
+        <img id="user-mobile-image" class="user-image" src="" alt="">
+
+        <div class="user-mobile-description">
+            <h2 class="description-name"></h2>
+            <h4 class="description-nametwo"></h4>
+            <p class="description-bio"></p>
+        </div>
+   </aside>
+   <!-- ends here -->
+   <section class="hero">
+
+       <div class="hero-main">
+           <a href="#" class="flexing">
+            <i class="material-icons"> import_contacts </i>
+               overview
+           </a>
+           <a class="active flexing" href="#">
+            <i class="material-icons">
+                import_contacts
+                </i>
+           Repositories
+           <span class="repo-count"></span>
+        </a>
+        <a href="#" class="flexing">
+            <i class="material-icons">
+                import_contacts
+                </i>
+           Projects
+        </a>
+        <a href="#" class="flexing">
+            <i class="material-icons">
+                import_contacts
+                </i>
+           Package
+        </a>
+       </div>
+   </section>
+   <section class="main">
+       <aside class="aside">
+           <div class="aside-inner">
+            <img class="user-image" id="userImage" src="" alt="">
+
+            <div class="description">
+                <h2 class="description-name"></h2>
+                <h4 class="description-nametwo"></h4>
+                <p class="description-bio"></p>
+            </div>
+           </div>
+       </aside>
+       <div class="display-repo">
+           <div class="form-container border-bottom">
+            <form  class="repo-form">
+                <input type="text" placeholder="search a repository...">
+            </form>
+           </div>
+           <h4><span class="bold repo-count"></span> results for public repositories</h4>
+           <div class="repo-description border-bottom">
+              
+           </div>
+       </div>
+   </section>
+   <script src="app.js"></script>
+</body>
+</html>
