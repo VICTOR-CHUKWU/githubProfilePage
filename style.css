@@ -90,6 +90,20 @@ input:focus{
     color: rgb(68, 66, 66);
     font-size: 15px;
 }
+.fork-image{
+    width: 15px;
+    height: 15px;
+}
+.repo-image{
+    width: 15px;
+    height: 15px;
+    margin-right: .1rem;
+}
+.overview-image{
+    width: 25px;
+    height: 25px;
+    margin-right: .1rem;
+}
 .dropdown{
     display: none;
     cursor: pointer;
@@ -384,6 +398,10 @@ input:focus{
     font-size: 15px;
     color: black;
     border-radius: 5px;
+    margin-left: .2rem;
+}
+#repo-count-id{
+    background: transparent;
 }
 .repo-form{
     border: 1px solid lightgray;
