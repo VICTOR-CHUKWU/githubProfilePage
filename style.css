@@ -8,8 +8,9 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: rgb(243, 238, 228);
+    background: rgb(248, 248, 247);
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 .header{
     display: flex;
@@ -98,6 +99,11 @@ input:focus{
     width: 15px;
     height: 15px;
     margin-right: .1rem;
+}
+.git-icon{
+    fill:white;
+    font-size: 25px;
+    margin-right: 1rem;
 }
 .overview-image{
     width: 25px;
@@ -292,7 +298,7 @@ input:focus{
     display: flex;
     align-items: center;
 }
-.flexing i{
+.flexing svg{
     margin-right: .2rem;
 }
 .hero-main{
@@ -320,6 +326,8 @@ input:focus{
 /* hero section responsive */
 @media all and (max-width: 767px){
     .hero{
+        margin-left: .5rem;
+        margin-right: .5rem;
         overflow-x: scroll;
     }
     .hero a{
@@ -331,7 +339,7 @@ input:focus{
 .main{
     margin : 1rem 2rem;
     display: grid;
-    grid-template-areas: 'aside main main main';
+    grid-template-areas: 'aside main main';
 }
 .aside{
     grid-area: aside;
@@ -344,7 +352,7 @@ input:focus{
 .aside-inner{
     position: absolute;
     top: -2rem;
-    right: 2rem;
+    right: 1rem;
 }
 #userImage{
     width: 200px;
@@ -357,16 +365,16 @@ input:focus{
     .main{
         margin : 1rem 1rem;
         display: grid;
-        grid-template-areas: 'aside aside main main main';
+        grid-template-areas: 'aside  main main';
     }
     .aside-inner{
         position: absolute;
         top: -2rem;
-        right: .5rem;
+        right: -7rem;
     }
     #userImage{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
        
     }
@@ -414,7 +422,8 @@ input:focus{
     border: none;
     outline: none;
     padding: .5rem 1rem;
-    color: white;
+    color: black;
+    font-size: 15px;
    
 }
 .form-container{
@@ -443,21 +452,31 @@ input:focus{
     padding-bottom: 1rem;
 }
 .repo-description-rating a{
-    color: rgb(44, 96, 192);
+    color: rgb(40, 21, 216);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
+}
+.repo-description-paragraph{
+    font-size: 12px;
+    margin-top: 0;
 }
 .repo-java{
     padding: 1.5rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid lightgray;
 }
-#ranking-icon{
+.ranking-icon{
     color: rgb(53, 52, 52);
-    font-size: 12px;
+    font-size: 15px;
     margin: 0 .5rem;
     font-weight: 300;
+}
+.icon-count{
+    color: rgb(53, 52, 52);
+    font-size: 12px;
+    /* margin: 0 .5rem; */
+    font-weight: bold;
 }
 .border-span{
     border: 1px solid lightgray;
@@ -479,5 +498,10 @@ input:focus{
     }
     .fa-star{
         font-size: 12px;
+    }
+}
+@media all and (max-width: 1024px){
+    .display-repo{
+        margin-left: 8rem;
     }
 }
