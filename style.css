@@ -484,11 +484,20 @@ input:focus{
     display: flex;
     align-items: center;
 }
+
+@media all and (max-width: 1024px){
+    .display-repo{
+        margin-left: 8rem;
+    }
+}
 @media all and (max-width: 767px){
     .main{
         margin : 1rem 1rem;
         display: grid;
         grid-template-areas: ' main';
+    }
+    .display-repo{
+        margin-left: .5rem;
     }
     .aside{
         display: none;
@@ -498,10 +507,5 @@ input:focus{
     }
     .fa-star{
         font-size: 12px;
-    }
-}
-@media all and (max-width: 1024px){
-    .display-repo{
-        margin-left: 8rem;
     }
 }
