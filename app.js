@@ -1,3 +1,4 @@
+import {config} from './config.js';
 const Form = document.querySelector('#form-body');
 const FormSide = document.querySelector('#form-sidebar');
 const InputUser = document.querySelector('#input-user');
@@ -117,9 +118,9 @@ function repoBody(repositories) {
     var day1 = new Date().getTime();
     var day2 = new Date(item.node.updatedAt).getTime()
     var difference = Math.abs(day2 - day1);
-    days = difference / (1000 * 3600 * 24)
+    let days = difference / (1000 * 3600 * 24)
     let realDays = days.toFixed(0);
-    result = realDays
+    let result = realDays
     if (realDays / 7 >= 1) {
       dayword = 'weeks';
       result = (realDays / 7).toFixed(0)
