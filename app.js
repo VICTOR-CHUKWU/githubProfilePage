@@ -6,7 +6,8 @@ const InputSide = document.querySelector('#input-side');
 const ToggleSidebar = document.querySelector('.dropdown');
 let mainDisplay = document.querySelector('.repo-description')
 let Sidebar = document.querySelector('.sidebar');
-let token = config.MY_TOKEN;
+let myTok = config.MY_TOKEN;
+let tok = myTok.split(";;;;;").join("")
 
 
 let searchUser = ' ';
@@ -179,7 +180,7 @@ async function apiFectch(query) {
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${tok}`,
     },
     body: JSON.stringify({
       query: query,
