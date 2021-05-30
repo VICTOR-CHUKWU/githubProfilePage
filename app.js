@@ -155,7 +155,7 @@ function repoBody(repositories) {
           <span class='icon-count'> ${item.node.forks.totalCount}</>
            
          </a> 
-         <span class="ranking-icon">updated at ${result} ${dayword} ago</span>
+         <span class="ranking-icon" id='update-counter'>updated at ${result} ${dayword} ago</span>
         </div>
       </div>
       <div>

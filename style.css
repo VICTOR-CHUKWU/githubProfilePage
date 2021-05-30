@@ -332,6 +332,8 @@ input:focus{
     }
     .hero a{
         font-size: 12px;
+        margin-left: .3rem;
+        margin-right: .3rem;
     }
 }
 
@@ -492,12 +494,12 @@ input:focus{
 }
 @media all and (max-width: 767px){
     .main{
-        margin : 1rem 1rem;
+        margin : 1rem .5rem;
         display: grid;
         grid-template-areas: ' main';
     }
     .display-repo{
-        margin-left: .5rem;
+        margin-left: 0;
     }
     .aside{
         display: none;
@@ -507,5 +509,12 @@ input:focus{
     }
     .fa-star{
         font-size: 12px;
+    }
+    .repo-java{
+        padding: 1rem .5rem;
+        margin-bottom: .5rem;
+    }
+    #update-counter{
+        display: none;
     }
 }
